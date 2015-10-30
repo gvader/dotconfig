@@ -1,0 +1,31 @@
+[user]
+	name = Lukasz Gwadera
+	email = l.gwadera@dcclabs.tv
+[core]
+	editor = vim
+	excludesfile = /home/gvader/.gitignore
+[web]
+	browser = google-chrome
+[push]
+	default = matching
+[color]
+	ui = auto
+[color "branch"]
+	current = jellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[merge]
+    tool = mymeld
+    conflictstyle = diff3
+[mergetool "mymeld"]
+    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
