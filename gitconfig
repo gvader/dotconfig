@@ -7,11 +7,10 @@
 [web]
 	browser = google-chrome
 [push]
-	default = matching
+	default = current
 [color]
 	ui = auto
 [color "branch"]
-	current = jellow bold
 	local = green bold
 	remote = cyan bold
 [color "diff"]
@@ -28,4 +27,4 @@
     tool = mymeld
     conflictstyle = diff3
 [mergetool "mymeld"]
-    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+    cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
