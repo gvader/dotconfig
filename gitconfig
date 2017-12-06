@@ -1,6 +1,6 @@
 [user]
 	name = Lukasz Gwadera
-	email = l.gwadera@dcclabs.tv
+	email = lukasz.gwadera@gmail.com
 [core]
 	editor = vim
 	excludesfile = /home/gvader/.gitignore
@@ -24,7 +24,10 @@
 	changed = yellow bold
 	untracked = red bold
 [merge]
-    tool = mymeld
-    conflictstyle = diff3
+	tool = mymeld
+	conflictstyle = diff3
 [mergetool "mymeld"]
-    cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+	cmd = meld --diff $LOCAL $MERGED $REMOTE --diff $BASE $LOCAL --diff $BASE $REMOTE
+
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit
