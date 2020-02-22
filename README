@@ -5,7 +5,10 @@ original file.
 Currently versioned files:
 .gitignore
 .gitconfig
+config.fish
+fish_prompt.fish
+
 
 Deploy:
 git clone git@github.com:gvader/dotconfig.git .config_gvader
-cd ~ && ln -s .config_gvader/gitignore .gitignore && ln -s .config_gvader/gitconfig .gitconfig
+cd ~ && ln -s .config_gvader/gitignore .gitignore && ln -s .config_gvader/gitconfig .gitconfig && ln -s ~/.config_gvader/config.fish ~/.config/fish/config.fish && mkdir -p .config/fish/functions && ln -s ~/.config_gvader/fish_prompt.fish ~/.config/fish/functions/fish_prompt.fish
